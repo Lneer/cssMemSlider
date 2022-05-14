@@ -10,11 +10,15 @@ html,body{
 .wrapper{
     width: 90%;
     margin: 0 auto;
+    background-color:bisque ;
 }
 
 .slider{
-    display: flex;
-    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 500px 200px;
+    grid-template-rows: 660px 50px;
     max-width: 700px;
     width: 70%;
     background-color:bisque ;
@@ -50,11 +54,16 @@ html,body{
 .slider__descriptions{
     display: flex;
     width: max-content;
-    height: fit-content;
-    flex-wrap: nowrap;
+    align-self: center;
     transition: 0.8s;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
 }
 .slider__note{
+    margin-left: 2rem;
     width: 700px;
     font-size: 2rem;
 }
@@ -64,11 +73,34 @@ html,body{
 .slider__radiobtns{
     font-size: 2rem;
     z-index: 20;
+    justify-self: center;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-#s1:checked ~ .slider__album   {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:checked ~ .slider__album  {transform: translateX(-25%); -webkit-transform: translateX(-25%);}
-#s3:checked ~ .slider__album  {transform: translateX(-50%); -webkit-transform: translateX(-50%);}
-#s4:checked ~ .slider__album  {transform: translateX(-75%); -webkit-transform: translateX(-75%);}
+.like-btn{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2rem;
+    border: solid 2px blue;
+    background-color:blue;
+    cursor: pointer;
+}
+.like-btn:hover{
+    background-color:beige; 
+}
+#s1:checked ~ .slider__radiobtns >*:nth-child(1) { background-color: aqua;}
+#s2:checked ~ .slider__radiobtns >*:nth-child(2) { background-color: aqua;}
+#s3:checked ~ .slider__radiobtns >*:nth-child(3) { background-color: aqua;}
+#s4:checked ~ .slider__radiobtns >*:nth-child(4) { background-color: aqua;}
+
+#s1:checked ~ .slider__album   {transform: translateX( 0%); }
+#s2:checked ~ .slider__album  {transform: translateX(-25%); }
+#s3:checked ~ .slider__album  {transform: translateX(-50%); }
+#s4:checked ~ .slider__album  {transform: translateX(-75%);}
 
 #s1:checked ~ .slider__descriptions {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
 #s2:checked ~ .slider__descriptions{transform: translateX(-25%); -webkit-transform: translateX(-25%);}
