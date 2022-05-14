@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>memeslider</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="slider">
+            <input class ="btn_check" type="radio" name="slider" id="s1" checked>
+            <input class ="btn_check" type="radio" name="slider" id="s2">
+            <input class ="btn_check" type="radio" name="slider" id="s3">
+            <input class ="btn_check" type="radio" name="slider" id="s4">
             <div class="slider__album">
                 <div class="slider__image image1"></div>
                 <div class="slider__image image2"></div>
@@ -16,12 +21,25 @@
                 <div class="slider__image image4"></div>
             </div>
             <div class="slider__descriptions">
-                <div class="slider__note note1"></div>
-                <div class="slider__note note2"></div>
-                <div class="slider__note note3"></div>
-                <div class="slider__note note4"></div>
+                <div class="slider__note note1">text1</div>
+                <div class="slider__note note2">text2</div>
+                <div class="slider__note note3">text3</div>
+                <div class="slider__note note4">text4</div>
             </div>
-            <div class="slider__radiobtns"></div>
+            <div class="slider__radiobtns">
+                <label for="s1" name = "slider">
+                    <span >1</span>
+                </label>
+                <label for="s2">
+                    <span >2</span>
+                </label>
+                <label for="s3">
+                    <span >3</span>
+                </label>
+                <label for="s4">
+                    <span >4</span>
+                </label>
+            </div>
         </div>
     </div>
     
