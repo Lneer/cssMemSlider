@@ -8,53 +8,48 @@ html,body{
 }
 
 .wrapper{
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
     background-color:bisque ;
 }
 
 .slider{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: grid;
-    grid-template-columns: 500px 200px;
-    grid-template-rows: 660px 50px;
-    max-width: 700px;
-    width: 70%;
+    grid-template-columns: 30vw 10.42vw;
+    grid-template-rows: 34.38vw 6rem;
+    max-width: 40.42vw;
     background-color:bisque ;
     margin: 0 auto;
     overflow: hidden;
+}  
+    @media screen and (max-width: 700px) {
+        .slider{
+            display: flex;
+            flex-direction: column;
+            gap:0.5rem
+        } 
+    } 
    
-}
 .slider__album{
     display: flex;
     width: max-content;
     flex-wrap: nowrap;
     transition: 0.8s;
 }
-.slider__image{
-    flex-shrink: 0;
-    background-size: cover;
-    width: 700px;
-    height: 660px;
-}
-.image1{
-    background: url(/asset/mem1.jpg);
-}
-.image2{
-    background: url(/asset/mem2.jpg);
-}
-.image3{
-    background: url(/asset/mem3-4.jpg);
-}
-.image4{
-    background: url(/asset/mem4.jpg);
+
+.image{
+    display: block;
+    width: 40.42vw;
+    height: 34.38vw;
 }
 
 .slider__descriptions{
     display: flex;
     width: max-content;
     align-self: center;
+    font-size: calc(100% / 0.5);
     transition: 0.8s;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -62,15 +57,24 @@ html,body{
     grid-row-end: 3;
 
 }
+@media screen and (max-width: 700px) {
+    .slider__descriptions{
+        align-self: flex-start;
+        white-space: pre-line;
+        font-size: calc(100% / 0.8);
+    } 
+} 
 .slider__note{
     margin-left: 2rem;
-    width: 700px;
-    font-size: 2rem;
+    width: 40.42vw;
+    
 }
 .btn_check{
     display: none;
 }
 .slider__radiobtns{
+    display: inline-flex;
+    gap: 0.5rem;
     font-size: 2rem;
     z-index: 20;
     justify-self: center;
@@ -82,12 +86,14 @@ html,body{
 }
 .like-btn{
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 2rem;
-    border: solid 2px blue;
+    border: solid 0.2rem blue;
     background-color:blue;
     cursor: pointer;
+    padding: 0.3rem;
+    
 }
 .like-btn:hover{
     background-color:beige; 
@@ -97,12 +103,12 @@ html,body{
 #s3:checked ~ .slider__radiobtns >*:nth-child(3) { background-color: aqua;}
 #s4:checked ~ .slider__radiobtns >*:nth-child(4) { background-color: aqua;}
 
-#s1:checked ~ .slider__album   {transform: translateX( 0%); }
-#s2:checked ~ .slider__album  {transform: translateX(-25%); }
-#s3:checked ~ .slider__album  {transform: translateX(-50%); }
+#s1:checked ~ .slider__album   {transform: translateX(0%);}
+#s2:checked ~ .slider__album  {transform: translateX(-25%);}
+#s3:checked ~ .slider__album  {transform: translateX(-50%);}
 #s4:checked ~ .slider__album  {transform: translateX(-75%);}
 
-#s1:checked ~ .slider__descriptions {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:checked ~ .slider__descriptions{transform: translateX(-25%); -webkit-transform: translateX(-25%);}
-#s3:checked ~ .slider__descriptions{transform: translateX(-50%); -webkit-transform: translateX(-50%);}
-#s4:checked ~ .slider__descriptions{transform: translateX(-75%); -webkit-transform: translateX(-75%);}
+#s1:checked ~ .slider__descriptions {transform: translateX(0%);}
+#s2:checked ~ .slider__descriptions{transform: translateX(-25%);}
+#s3:checked ~ .slider__descriptions{transform: translateX(-50%);}
+#s4:checked ~ .slider__descriptions{transform: translateX(-75%);}
