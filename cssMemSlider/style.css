@@ -133,15 +133,18 @@ html,body{
 #s3:checked ~ .slider__radiobtns >*:nth-child(3) .like-btn{ background-color: rgb(130,91,1);}
 #s4:checked ~ .slider__radiobtns >*:nth-child(4) .like-btn{ background-color: rgb(130,91,1);}
 #s5:checked ~ .slider__radiobtns >*:nth-child(5) .like-btn{ background-color: rgb(130,91,1);}
+#s6:checked ~ .slider__radiobtns >*:nth-child(6) .like-btn{ background-color: rgb(130,91,1);}
 
 #s1:checked ~ .slider__album   {transform: translateX(0%);}
-#s2:checked ~ .slider__album  {transform: translateX(-20%);}
-#s3:checked ~ .slider__album  {transform: translateX(-40%);}
-#s4:checked ~ .slider__album  {transform: translateX(-60%);}
-#s5:checked ~ .slider__album  {transform: translateX(-80%);}
+#s2:checked ~ .slider__album  {transform: translateX(-16.667%);}
+#s3:checked ~ .slider__album  {transform: translateX(-33.333%);}
+#s4:checked ~ .slider__album  {transform: translateX(-50%);}
+#s5:checked ~ .slider__album  {transform: translateX(-66.667%);}
+#s6:checked ~ .slider__album  {transform: translateX(-83.333%);}
 
 #s1:checked ~ .slider__descriptions {transform: translateX(0%);}
-#s2:checked ~ .slider__descriptions{transform: translateX(-20%);}
-#s3:checked ~ .slider__descriptions{transform: translateX(-40%);}
-#s4:checked ~ .slider__descriptions{transform: translateX(-60%);}
-#s5:checked ~ .slider__descriptions{transform: translateX(-80%);}
+#s2:checked ~ .slider__descriptions{transform: translateX(-16.667%);}
+#s3:checked ~ .slider__descriptions{transform: translateX(-33.333%);}
+#s4:checked ~ .slider__descriptions{transform: translateX(-50%);}
+#s5:checked ~ .slider__descriptions{transform: translateX(-66.667%);}
+#s6:checked ~ .slider__descriptions{transform: translateX(-83.333%);}
