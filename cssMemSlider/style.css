@@ -63,7 +63,7 @@ html,body{
     display: flex;
     width: max-content;
     align-self: center;
-    color: rgb(106, 101, 93); 
+    color: rgb(200, 200, 200); 
     font-size: calc(100% / 0.5);
     transition: 0.8s;
     grid-column-start: 1;
