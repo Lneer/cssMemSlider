@@ -13,7 +13,7 @@ html,body{
     background-color:rgb(28,34,42);
     
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .wrapper{
         width: 80%;
     } 
@@ -30,7 +30,7 @@ html,body{
     margin: 0 auto;
     overflow: hidden;
 }  
-    @media screen and (max-width: 740px) {
+    @media screen and (max-width: 768px) {
         .slider{
             display: flex;
             flex-direction: column;
@@ -51,7 +51,7 @@ html,body{
     width: 50.42vw;
     height: 40vw;
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .image{
         width: 70vw;
         height: 65vw;
@@ -72,7 +72,7 @@ html,body{
     grid-row-end: 3;
 
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .slider__descriptions{
         align-self: flex-start;
         white-space: pre-line;
@@ -85,7 +85,7 @@ html,body{
     width: 50.42vw;
     
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .slider__note{
         width: 70vw;
     } 
