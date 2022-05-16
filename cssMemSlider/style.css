@@ -23,8 +23,8 @@ html,body{
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: grid;
-    grid-template-columns: 40vw 10.42vw;
-    grid-template-rows: 34.38vw 6rem;
+    grid-template-columns: 35vw 15.42vw;
+    grid-template-rows: 40vw 6rem;
     max-width: 50.42vw;
     background-color:rgb(28,34,42) ;
     margin: 0 auto;
@@ -49,7 +49,7 @@ html,body{
 .image{
     display: block;
     width: 50.42vw;
-    height: 34.38vw;
+    height: 40vw;
 }
 @media screen and (max-width: 740px) {
     .image{
@@ -132,13 +132,16 @@ html,body{
 #s2:checked ~ .slider__radiobtns >*:nth-child(2) .like-btn{ background-color: rgb(130,91,1);}
 #s3:checked ~ .slider__radiobtns >*:nth-child(3) .like-btn{ background-color: rgb(130,91,1);}
 #s4:checked ~ .slider__radiobtns >*:nth-child(4) .like-btn{ background-color: rgb(130,91,1);}
+#s5:checked ~ .slider__radiobtns >*:nth-child(5) .like-btn{ background-color: rgb(130,91,1);}
 
 #s1:checked ~ .slider__album   {transform: translateX(0%);}
-#s2:checked ~ .slider__album  {transform: translateX(-25%);}
-#s3:checked ~ .slider__album  {transform: translateX(-50%);}
-#s4:checked ~ .slider__album  {transform: translateX(-75%);}
+#s2:checked ~ .slider__album  {transform: translateX(-20%);}
+#s3:checked ~ .slider__album  {transform: translateX(-40%);}
+#s4:checked ~ .slider__album  {transform: translateX(-60%);}
+#s5:checked ~ .slider__album  {transform: translateX(-80%);}
 
 #s1:checked ~ .slider__descriptions {transform: translateX(0%);}
-#s2:checked ~ .slider__descriptions{transform: translateX(-25%);}
-#s3:checked ~ .slider__descriptions{transform: translateX(-50%);}
-#s4:checked ~ .slider__descriptions{transform: translateX(-75%);}
+#s2:checked ~ .slider__descriptions{transform: translateX(-20%);}
+#s3:checked ~ .slider__descriptions{transform: translateX(-40%);}
+#s4:checked ~ .slider__descriptions{transform: translateX(-60%);}
+#s5:checked ~ .slider__descriptions{transform: translateX(-80%);}
