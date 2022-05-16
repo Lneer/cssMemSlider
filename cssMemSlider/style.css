@@ -23,9 +23,9 @@ html,body{
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: grid;
-    grid-template-columns: 35vw 15.42vw;
-    grid-template-rows: 40vw 6rem;
-    max-width: 50.42vw;
+    grid-template-columns: 44vw 16vw;
+    grid-template-rows: 42vw 6rem;
+    max-width: 60vw;
     background-color:rgb(28,34,42) ;
     margin: 0 auto;
     overflow: hidden;
@@ -48,13 +48,13 @@ html,body{
 
 .image{
     display: block;
-    width: 50.42vw;
-    height: 40vw;
+    width: 60vw;
+    height: 42vw;
 }
 @media screen and (max-width: 768px) {
     .image{
         width: 70vw;
-        height: 65vw;
+        height: 60vw;
         order: 0;
     } 
 }
@@ -82,12 +82,13 @@ html,body{
 } 
 .slider__note{
     margin-left: 2rem;
-    width: 50.42vw;
+    width: 60vw;
     
 }
 @media screen and (max-width: 768px) {
     .slider__note{
         width: 70vw;
+        margin-left: 0.5rem;
     } 
 }
 .btn_check{
