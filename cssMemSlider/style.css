@@ -10,10 +10,10 @@ html,body{
 .wrapper{
     width: 80%;
     margin: 0 auto;
-    background-color:bisque ;
+    background-color:rgb(28,34,42);
     
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
     .wrapper{
         width: 80%;
     } 
@@ -23,14 +23,14 @@ html,body{
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: grid;
-    grid-template-columns: 30vw 10.42vw;
+    grid-template-columns: 40vw 10.42vw;
     grid-template-rows: 34.38vw 6rem;
-    max-width: 40.42vw;
-    background-color:bisque ;
+    max-width: 50.42vw;
+    background-color:rgb(28,34,42) ;
     margin: 0 auto;
     overflow: hidden;
 }  
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 740px) {
         .slider{
             display: flex;
             flex-direction: column;
@@ -48,13 +48,14 @@ html,body{
 
 .image{
     display: block;
-    width: 40.42vw;
+    width: 50.42vw;
     height: 34.38vw;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
     .image{
         width: 70vw;
         height: 65vw;
+        order: 0;
     } 
 }
 
@@ -62,6 +63,7 @@ html,body{
     display: flex;
     width: max-content;
     align-self: center;
+    color: rgb(106, 101, 93); 
     font-size: calc(100% / 0.5);
     transition: 0.8s;
     grid-column-start: 1;
@@ -70,19 +72,20 @@ html,body{
     grid-row-end: 3;
 
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
     .slider__descriptions{
         align-self: flex-start;
         white-space: pre-line;
+        order: 2;
         
     } 
 } 
 .slider__note{
     margin-left: 2rem;
-    width: 40.42vw;
+    width: 50.42vw;
     
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
     .slider__note{
         width: 70vw;
     } 
@@ -92,8 +95,8 @@ html,body{
 }
 .slider__radiobtns{
     display: inline-flex;
-    gap: 0.5rem;
-    font-size: 2rem;
+    justify-self: stretch;
+    font-size: 0;
     z-index: 20;
     justify-self: center;
     align-self: center;
@@ -107,22 +110,28 @@ html,body{
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 2rem;
-    border: solid 0.2rem blue;
-    background-color:blue;
+    border: solid 0.2rem rgb(220, 220, 220);
+    background-color:rgb(237,176,33);
     padding: 0.3rem;
     
 }
 .super-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
 }
 .super-btn:hover .like-btn{
-    background-color:beige; 
+    background-color:rgb(212, 167, 82); 
     
 }
-#s1:checked ~ .slider__radiobtns >*:nth-child(1) .like-btn{ background-color: aqua;}
-#s2:checked ~ .slider__radiobtns >*:nth-child(2) .like-btn{ background-color: aqua;}
-#s3:checked ~ .slider__radiobtns >*:nth-child(3) .like-btn{ background-color: aqua;}
-#s4:checked ~ .slider__radiobtns >*:nth-child(4) .like-btn{ background-color: aqua;}
+#s1:checked ~ .slider__radiobtns >*:nth-child(1) .like-btn{ background-color: rgb(130,91,1);}
+#s2:checked ~ .slider__radiobtns >*:nth-child(2) .like-btn{ background-color: rgb(130,91,1);}
+#s3:checked ~ .slider__radiobtns >*:nth-child(3) .like-btn{ background-color: rgb(130,91,1);}
+#s4:checked ~ .slider__radiobtns >*:nth-child(4) .like-btn{ background-color: rgb(130,91,1);}
 
 #s1:checked ~ .slider__album   {transform: translateX(0%);}
 #s2:checked ~ .slider__album  {transform: translateX(-25%);}
