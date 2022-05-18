@@ -125,6 +125,9 @@ html,body{
     height: 2rem;
     border-radius: 2rem;
 }
+.super-btn:active{
+    transform: scale(0.9);
+}
 .super-btn:hover .like-btn{
     background-color:rgb(212, 167, 82); 
     
