@@ -13,7 +13,7 @@ html,body{
     background-color:rgb(28,34,42);
     
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .wrapper{
         width: 80%;
     } 
@@ -23,14 +23,14 @@ html,body{
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: grid;
-    grid-template-columns: 35vw 15.42vw;
-    grid-template-rows: 40vw 6rem;
-    max-width: 50.42vw;
+    grid-template-columns: 44vw 16vw;
+    grid-template-rows: 42vw 6rem;
+    max-width: 60vw;
     background-color:rgb(28,34,42) ;
     margin: 0 auto;
     overflow: hidden;
 }  
-    @media screen and (max-width: 740px) {
+    @media screen and (max-width: 768px) {
         .slider{
             display: flex;
             flex-direction: column;
@@ -48,13 +48,13 @@ html,body{
 
 .image{
     display: block;
-    width: 50.42vw;
-    height: 40vw;
+    width: 60vw;
+    height: 42vw;
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .image{
         width: 70vw;
-        height: 65vw;
+        height: 60vw;
         order: 0;
     } 
 }
@@ -63,7 +63,7 @@ html,body{
     display: flex;
     width: max-content;
     align-self: center;
-    color: rgb(106, 101, 93); 
+    color: rgb(200, 200, 200); 
     font-size: calc(100% / 0.5);
     transition: 0.8s;
     grid-column-start: 1;
@@ -72,7 +72,7 @@ html,body{
     grid-row-end: 3;
 
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .slider__descriptions{
         align-self: flex-start;
         white-space: pre-line;
@@ -82,12 +82,13 @@ html,body{
 } 
 .slider__note{
     margin-left: 2rem;
-    width: 50.42vw;
+    width: 60vw;
     
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .slider__note{
         width: 70vw;
+        margin-left: 0.5rem;
     } 
 }
 .btn_check{
@@ -124,6 +125,9 @@ html,body{
     height: 2rem;
     border-radius: 2rem;
 }
+.super-btn:active{
+    transform: scale(0.9);
+}
 .super-btn:hover .like-btn{
     background-color:rgb(212, 167, 82); 
     
@@ -133,15 +137,18 @@ html,body{
 #s3:checked ~ .slider__radiobtns >*:nth-child(3) .like-btn{ background-color: rgb(130,91,1);}
 #s4:checked ~ .slider__radiobtns >*:nth-child(4) .like-btn{ background-color: rgb(130,91,1);}
 #s5:checked ~ .slider__radiobtns >*:nth-child(5) .like-btn{ background-color: rgb(130,91,1);}
+#s6:checked ~ .slider__radiobtns >*:nth-child(6) .like-btn{ background-color: rgb(130,91,1);}
 
 #s1:checked ~ .slider__album   {transform: translateX(0%);}
-#s2:checked ~ .slider__album  {transform: translateX(-20%);}
-#s3:checked ~ .slider__album  {transform: translateX(-40%);}
-#s4:checked ~ .slider__album  {transform: translateX(-60%);}
-#s5:checked ~ .slider__album  {transform: translateX(-80%);}
+#s2:checked ~ .slider__album  {transform: translateX(-16.667%);}
+#s3:checked ~ .slider__album  {transform: translateX(-33.333%);}
+#s4:checked ~ .slider__album  {transform: translateX(-50%);}
+#s5:checked ~ .slider__album  {transform: translateX(-66.667%);}
+#s6:checked ~ .slider__album  {transform: translateX(-83.333%);}
 
 #s1:checked ~ .slider__descriptions {transform: translateX(0%);}
-#s2:checked ~ .slider__descriptions{transform: translateX(-20%);}
-#s3:checked ~ .slider__descriptions{transform: translateX(-40%);}
-#s4:checked ~ .slider__descriptions{transform: translateX(-60%);}
-#s5:checked ~ .slider__descriptions{transform: translateX(-80%);}
+#s2:checked ~ .slider__descriptions{transform: translateX(-16.667%);}
+#s3:checked ~ .slider__descriptions{transform: translateX(-33.333%);}
+#s4:checked ~ .slider__descriptions{transform: translateX(-50%);}
+#s5:checked ~ .slider__descriptions{transform: translateX(-66.667%);}
+#s6:checked ~ .slider__descriptions{transform: translateX(-83.333%);}
